@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Games.cs" />
     <Compile Include="MusicPlayer.cs" />
     <Compile Include="Graphic.cs" />
     <Compile Include="KeyboardMenu.cs" />
@@ -54,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lobster.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LogoTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LogoThemeS.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 
 namespace CoolConsoleApp2
@@ -10,14 +6,38 @@ namespace CoolConsoleApp2
     class KeyboardMenu
     {
         private int SelectedIndex;
-        private string[] Options;
-        private string Label;
+        private string Label = "Выберите то, что хотите:";
+        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster", "Exit" };
 
-        public KeyboardMenu(string label, string[] options)
+        public void MainMenu()
         {
-            Label = label;
-            Options = options;
-            SelectedIndex = 0;
+            Graphic _Graphic = new Graphic();
+
+            KeyboardMenu mainMenu = new KeyboardMenu();
+            int selectedIndex = mainMenu.Run();
+
+            Games games = new Games();
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    games.DisplayMultiTab();
+                    break;
+                case 1:
+                    games.RandomNum();
+                    break;
+                case 2:
+                    games.Divisoin();
+                    break;
+                case 3:
+                    _Graphic.lobster();
+                    break;
+                case 4:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    break;
+            }
         }
 
         public void DisplayOptions()
@@ -35,11 +55,17 @@ namespace CoolConsoleApp2
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.White;
                 }
+                else if (i == 4)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
+
                 Console.SetCursorPosition(65 - Options[i].Length/2, 10 + i);
                 Console.WriteLine($"<< {currentOption} >>");
 
@@ -54,8 +80,6 @@ namespace CoolConsoleApp2
 
             do
             {
-                //Console.Clear();
-                //_Graphic.NumArr();
                 new Thread(DisplayOptions).Start();
 
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);

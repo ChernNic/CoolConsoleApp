@@ -14,3 +14,13 @@ C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\C
 C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.exe
 C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.pdb
 C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsoleApp2\CoolConsoleApp2\bin\Debug\lobster.wav
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\lobster.wav
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.exe.config
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.exe
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.pdb
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csprojAssemblyReference.cache
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.exe
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.pdb
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\LogoTheme.wav
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\LogoThemeS.wav

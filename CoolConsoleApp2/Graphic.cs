@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.Media;
 
@@ -12,21 +9,24 @@ namespace CoolConsoleApp2
     {
         public void ProgramLogoStart()
         {
+            Thread.Sleep(500);
+            SoundPlayer lobsterMusic = new SoundPlayer("LogoThemeS.wav");
+            lobsterMusic.Play();
             Console.SetWindowSize(150, 30);
             Console.ForegroundColor = ConsoleColor.DarkGreen;
 
             List<string> logoAuthor = new List<string> { "B", "Y", " ", "C", "H", "E", "R", "N", "_", "N", "I", "C" };
 
-            Console.Write("______   ______   ______   __                 ______   ______   __   __   ______   ______   __       ______             ______   ______  ______  \n");
-            Thread.Sleep(200);
+            Console.Write(" ______   ______   ______   __                 ______   ______   __   __   ______   ______   __       ______             ______   ______  ______  \n");
+            Thread.Sleep(500);
             Console.Write("/\\  ___\\ /\\  __ \\ /\\  __ \\ /\\ \\               /\\  ___\\ /\\  __ \\ /\\ \"-.\\ \\ /\\  ___\\ /\\  __ \\ /\\ \\     /\\  ___\\           /\\  __ \\ /\\  == \\/\\  == \\ \n");
-            Thread.Sleep(200);
+            Thread.Sleep(450);
             Console.Write("\\ \\ \\____\\ \\ \\/\\ \\\\ \\ \\/\\ \\\\ \\ \\____          \\ \\ \\____\\ \\ \\/\\ \\\\ \\ \\-.  \\\\ \\___  \\\\ \\ \\/\\ \\\\ \\ \\____\\ \\  __\\           \\ \\  __ \\\\ \\  _-/\\ \\  _-/ \n");
-            Thread.Sleep(200);
+            Thread.Sleep(400);
             Console.Write(" \\ \\_____\\\\ \\_____\\\\ \\_____\\\\ \\_____\\          \\ \\_____\\\\ \\_____\\\\ \\_\\\\\"\\_\\\\/\\_____\\\\ \\_____\\\\ \\_____\\\\ \\_____\\          \\ \\_\\ \\_\\\\ \\_\\   \\ \\_\\   \n");
-            Thread.Sleep(200);
+            Thread.Sleep(350);
             Console.Write("  \\/_____/ \\/_____/ \\/_____/ \\/_____/           \\/_____/ \\/_____/ \\/_/ \\/_/ \\/_____/ \\/_____/ \\/_____/ \\/_____/           \\/_/\\/_/ \\/_/    \\/_/   ");
-            Thread.Sleep(200);
+            Thread.Sleep(300);
 
             Console.SetCursorPosition(75 - logoAuthor.Count, 6);
             for (int i = 0; i < logoAuthor.Count; i++)
@@ -43,7 +43,7 @@ namespace CoolConsoleApp2
 
             List<string> logoAuthor = new List<string> { "B", "Y", " ", "C", "H", "E", "R", "N", "_", "N", "I", "C" };
 
-            Console.Write("______   ______   ______   __                 ______   ______   __   __   ______   ______   __       ______             ______   ______  ______  \n");
+            Console.Write(" ______   ______   ______   __                 ______   ______   __   __   ______   ______   __       ______             ______   ______  ______  \n");
             Console.Write("/\\  ___\\ /\\  __ \\ /\\  __ \\ /\\ \\               /\\  ___\\ /\\  __ \\ /\\ \"-.\\ \\ /\\  ___\\ /\\  __ \\ /\\ \\     /\\  ___\\           /\\  __ \\ /\\  == \\/\\  == \\ \n");
             Console.Write("\\ \\ \\____\\ \\ \\/\\ \\\\ \\ \\/\\ \\\\ \\ \\____          \\ \\ \\____\\ \\ \\/\\ \\\\ \\ \\-.  \\\\ \\___  \\\\ \\ \\/\\ \\\\ \\ \\____\\ \\  __\\           \\ \\  __ \\\\ \\  _-/\\ \\  _-/ \n");
             Console.Write(" \\ \\_____\\\\ \\_____\\\\ \\_____\\\\ \\_____\\          \\ \\_____\\\\ \\_____\\\\ \\_\\\\\"\\_\\\\/\\_____\\\\ \\_____\\\\ \\_____\\\\ \\_____\\          \\ \\_\\ \\_\\\\ \\_\\   \\ \\_\\   \n");
@@ -59,9 +59,7 @@ namespace CoolConsoleApp2
         public void lobster()
         {
             Console.Clear();
-            Thread.Sleep(300);
-            SoundPlayer lobsterMusic= new SoundPlayer("lobster.wav");
-            lobsterMusic.PlayLooping();
+            Thread.Sleep(400);
 
             Console.SetWindowSize(164, 44);
 
@@ -111,7 +109,9 @@ namespace CoolConsoleApp2
 **+++++++*++++++%######==+===+*.-:*:::**:**::*****+*+=+++***++********+**+**==*++=%########=+=#%===+=++===%%=%%==*++**::::::::*****+%+:::::***::-.----:-:::**:**
 +==+*+*+++++*+=%######=====%=%+--::****:****::**:***++++++*++++*++*********++=**=##########%++%#%%=====+===%=%%%#+===*:*:+++*++**:::*==::::***:::-.----:::::::-*
 ++**++++=#%%=+%%#####%=%#+%%*=+--::**::***:****::***+++*******+++++*********+=**+=##########=+=##%======++=%%%#%%###=***++++++****:::*%=*:::*****:-.:--:::::-:-*");
-            Console.ResetColor();
+            SoundPlayer lobsterMusic = new SoundPlayer("lobster.wav");
+            lobsterMusic.PlaySync();
+            Environment.Exit(0);
         }
     }
 }
