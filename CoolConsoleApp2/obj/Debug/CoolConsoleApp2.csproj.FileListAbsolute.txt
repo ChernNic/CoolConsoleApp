@@ -13,3 +13,4 @@ C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\C
 C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CoreCompileInputs.cache
 C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.exe
 C:\Users\chern\Desktop\CoolConsoleApp\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsoleApp2\CoolConsoleApp2\bin\Debug\lobster.wav

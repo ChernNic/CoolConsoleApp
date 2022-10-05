@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Threading;
 
 namespace CoolConsoleApp2
 {
@@ -22,28 +22,26 @@ namespace CoolConsoleApp2
 
         public void DisplayOptions()
         {
-            Console.SetCursorPosition(80 - Label.Length, 7);
+            Console.SetCursorPosition(80 - Label.Length, 8);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(Label);
 
             for (int i = 0; i < Options.Length; i++)
             {
                 string currentOption = Options[i];
-                string mark;
 
                 if (i == SelectedIndex)
                 {
-                    mark = "*";
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.White;
                 }
                 else
                 {
-                    mark = " ";
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
-                Console.SetCursorPosition(69 - Options[i].Length, 9 + i);
-                Console.WriteLine($"{mark}<< {currentOption} >>");
+                Console.SetCursorPosition(65 - Options[i].Length/2, 10 + i);
+                Console.WriteLine($"<< {currentOption} >>");
 
             }
             Console.ResetColor();
@@ -56,10 +54,9 @@ namespace CoolConsoleApp2
 
             do
             {
-                Console.Clear();
-                _Graphic.ProgramLogo();
-                _Graphic.NumArr();
-                DisplayOptions();
+                //Console.Clear();
+                //_Graphic.NumArr();
+                new Thread(DisplayOptions).Start();
 
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
                 keyPressed = keyInfo.Key;
@@ -75,7 +72,7 @@ namespace CoolConsoleApp2
                 else if (keyPressed == ConsoleKey.DownArrow)
                 {
                     SelectedIndex++;
-                    if (SelectedIndex == 3)
+                    if (SelectedIndex == Options.Length)
                     {
                         SelectedIndex = 0;
                     }
