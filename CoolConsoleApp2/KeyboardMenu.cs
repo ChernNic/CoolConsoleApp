@@ -7,15 +7,17 @@ namespace CoolConsoleApp2
     {
         private int SelectedIndex;
         private string Label = "Выберите то, что хотите:";
-        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster", "Exit" };
+        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster","Пианино" , "Exit" };
 
         public void MainMenu()
         {
-            Graphic _Graphic = new Graphic();
+
 
             KeyboardMenu mainMenu = new KeyboardMenu();
             int selectedIndex = mainMenu.Run();
 
+            Graphic _Graphic = new Graphic();
+            Piano piano = new Piano();
             Games games = new Games();
 
             switch (selectedIndex)
@@ -30,9 +32,12 @@ namespace CoolConsoleApp2
                     games.Divisoin();
                     break;
                 case 3:
-                    _Graphic.lobster();
+                    games.Divisoin();
                     break;
                 case 4:
+                    piano.Run();
+                    break;
+                case 5:
                     Environment.Exit(0);
                     break;
                 default:
@@ -55,7 +60,7 @@ namespace CoolConsoleApp2
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.White;
                 }
-                else if (i == 4)
+                else if (i == Options.Length - 1)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.BackgroundColor = ConsoleColor.Black;
