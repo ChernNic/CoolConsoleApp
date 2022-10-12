@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Graphic _Graphic = new Graphic();
-            _Graphic.ProgramLogoStart();
+            _Graphic.ProgramLogo();
 
             KeyboardMenu mainMenu = new KeyboardMenu();
             mainMenu.MainMenu();
