@@ -176,6 +176,7 @@ namespace CoolConsoleApp2
 
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
                 keyPressed = keyInfo.Key;
+                Console.Clear();
             } while (keyPressed != ConsoleKey.Escape);
 
             Console.ResetColor();
