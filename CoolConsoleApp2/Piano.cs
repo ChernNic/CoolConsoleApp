@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
 using NAudio.Midi;
 
 namespace CoolConsoleApp2
@@ -19,14 +18,13 @@ namespace CoolConsoleApp2
             int[] NotesFrenq = new int[] { 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
             int Note;
             int Octave = 1;
-            int SelectedKey = -1;
+            int SelectedKey = 1;
 
             do
             {
                 new Thread(DisplayPiano).Start();
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
                 keyPressed = Convert.ToInt32(keyInfo.Key);
-
 
                 switch (keyPressed)
                 {
@@ -180,6 +178,7 @@ namespace CoolConsoleApp2
                 Console.Clear();
                 Console.WriteLine("Чтобы вернуться в главное меню нажмите ESC.\n");
                 Console.WriteLine($"Октавы: {Octave} и {Octave + 1}");
+                
             }
 
         }
