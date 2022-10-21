@@ -3,56 +3,53 @@ using System.Threading;
 
 namespace CoolConsoleApp2
 {
-    class KeyboardMenu
+    class NoteMenu
     {
+
+
         private int SelectedIndex;
-        private string Label = "Выберите то, что хотите:";
-        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster", "Пианино" , "Заметки", "Exit" };
+        private string Label = "МЕНЮ ЗАМЕТОК \n";
+        private string Label2 = "Выберите действие:\n";
+        private string[] Options = { "Создать заметку", "Поиск заметок", "Вернуться в главное меню." };
 
-        public void MainMenu()
+        public void Menu()
         {
+            Console.Clear();
+            Console.ResetColor();
+            NoteMenu noteMenu = new NoteMenu();
+            int selectedIndex = noteMenu.Run();
 
-
-            KeyboardMenu mainMenu = new KeyboardMenu();
-            int selectedIndex = mainMenu.Run();
-
-            Graphic _Graphic = new Graphic();
-            Piano piano = new Piano();
-            Games games = new Games();
+            Notepad notepad = new Notepad();
 
             switch (selectedIndex)
             {
                 case 0:
-                    games.DisplayMultiTab();
+                    notepad.AddNote();
                     break;
                 case 1:
-                    games.RandomNum();
+                    notepad.PrintNotesList();
                     break;
                 case 2:
-                    games.Divisoin();
-                    break;
-                case 3:
-                    _Graphic.lobster();
-                    break;
-                case 4:
-                    piano.Run();
-                    break;
-                case 5:
-
-                    break;
-                case 6:
-                    Environment.Exit(0);
-                    break;
-                default:
+                    KeyboardMenu mainMenu = new KeyboardMenu();
+                    Graphic _Graphic = new Graphic();
+                    Console.ResetColor();
+                    Console.Clear();
+                    _Graphic.ProgramLogo();
+                    mainMenu.MainMenu();
                     break;
             }
         }
 
         public void DisplayOptions()
         {
-            Console.SetCursorPosition(80 - Label.Length, 8);
-            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.SetCursorPosition(0, 0);
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(Label);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Сегодня: " + DateTime.Now.ToString("dd'.'MM'.'yyyy") + "\n");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(Label2);
 
             for (int i = 0; i < Options.Length; i++)
             {
@@ -65,7 +62,7 @@ namespace CoolConsoleApp2
                 }
                 else if (i == Options.Length - 1)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
                 else
@@ -74,7 +71,6 @@ namespace CoolConsoleApp2
                     Console.BackgroundColor = ConsoleColor.Black;
                 }
 
-                Console.SetCursorPosition(65 - Options[i].Length/2, 10 + i);
                 Console.WriteLine($"<< {currentOption} >>");
 
             }
@@ -83,7 +79,6 @@ namespace CoolConsoleApp2
 
         public int Run()
         {
-            Graphic _Graphic = new Graphic();
             ConsoleKey keyPressed;
 
             do
