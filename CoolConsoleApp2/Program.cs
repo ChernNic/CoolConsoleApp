@@ -4,14 +4,12 @@
     {
         static void Main(string[] args)
         {
-            //Graphic _Graphic = new Graphic();
-            //_Graphic.ProgramLogo();
-
-            //KeyboardMenu mainMenu = new KeyboardMenu();
-            //mainMenu.MainMenu();
+            Graphic _Graphic = new Graphic();
+            _Graphic.ProgramLogoStart();
             Notepad notepad = new Notepad();
-
-            notepad.Menu();
+            notepad.NoteDeff();
+            KeyboardMenu mainMenu = new KeyboardMenu();
+            mainMenu.MainMenu();
 
         }
     }

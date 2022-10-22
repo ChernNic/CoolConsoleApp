@@ -56,3 +56,29 @@ C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsole
 C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsoleApp2\CoolConsoleApp2\bin\Debug\System.Security.AccessControl.xml
 C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsoleApp2\CoolConsoleApp2\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Николай\OneDrive\Рабочий стол\C# Projects\CoolConsoleApp2\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CopyComplete
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.exe
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\lobster.wav
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\LogoTheme.wav
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\LogoThemeS.wav
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.exe.config
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.exe
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\CoolConsoleApp2.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.Asio.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.Core.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.Midi.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.WinForms.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.WinMM.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\NAudio.xml
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CopyComplete

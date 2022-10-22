@@ -9,16 +9,14 @@ namespace CoolConsoleApp2
 {
     class Notepad
     {
-        NoteMenu noteMenu = new NoteMenu();
 
         DateTime dateTime = DateTime.Today;
         List<Note> notes = new List<Note>();
 
+        public void NoteDeff() { notes.Add(new Note(DateTime.Now, "Как пользоваться", @"Используйте стрелки влево и вправо, чтобы перемещаться между датам. \nПо нажатию Enter открывеатся полная информация о заметке.")); }
+
         private DateTime ReadDateTime()
         {
-            Console.Clear();
-            Console.ResetColor();
-
             Console.WriteLine("Введите время в формате: [02.12.2012 13:00]:");
             DateTime dateTime;
             while (!DateTime.TryParse(Console.ReadLine(), out dateTime))
@@ -44,10 +42,7 @@ namespace CoolConsoleApp2
 
             notes.Add(new Note(dateTime, name, text));
 
-            notes.Add(new Note(DateTime.Now, "Как пользоваться", @"Используйте стрелки влево и вправо, чтобы перемещаться между датам. \nПо нажатию Enter открывеатся полная информация о заметке."));
-
-            noteMenu.Menu();
-            Console.SetCursorPosition(0, 6);
+            Menu();
         }
 
         public List<Note> FindNotes(DateTime date)
@@ -84,31 +79,55 @@ namespace CoolConsoleApp2
             }
         }
 
+        public void DeleteNotes()
+        {
+            ConsoleKey keyPressed;
+            ConsoleKeyInfo keyInfo;
+            do
+            {
+                Console.WriteLine("Заметки с веденной вами датой, будут удаленны.");
+
+                DateTime dateTime = ReadDateTime();
+
+                List<Note> found = FindNotes(dateTime);
+
+                if (found.Count() > 0)
+                {
+                    foreach (Note note in found)
+                        notes.Remove(note);
+
+                    Console.WriteLine("Нажмите ESC чтобы вернуться в меню заметок.");
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("Ошибка: Заметки на эту дату не существует.\n");
+                    Console.ResetColor();
+                }
+                keyInfo = Console.ReadKey(true);
+                keyPressed = keyInfo.Key;
+
+
+            } while (keyPressed != ConsoleKey.Escape);
+
+            Console.ResetColor();
+            Console.Clear();
+            Menu();
+        }
+
+        //Список вывод====================================================================================================================
+
         public void PrintNotesList()
         {
 
             Console.Clear();
             Console.ResetColor();
 
-
-
             DateTime date = DateTime.Now.Date;
             ConsoleKey keyPressed;
+            ConsoleKeyInfo keyInfo;
             do
             {
-                ConsoleKeyInfo keyInfo = Console.ReadKey();
-                keyPressed = keyInfo.Key;
-                if (keyPressed == ConsoleKey.RightArrow)
-                {
-                    date = date.AddDays(1);
-                }
-                else if (keyPressed == ConsoleKey.LeftArrow)
-                {
-                    date = date.AddDays(-1);
-                }
-
-                Console.Clear();
-
                 Console.WriteLine(date.ToString("dd'.'MM'.'yyyy"));
 
                 List<Note> notesF = new List<Note>();
@@ -117,9 +136,9 @@ namespace CoolConsoleApp2
                 if (notesF.Count() > 0)
                 {
                     Console.WriteLine("Заметки найдены: ");
-                    PrintNotes(date,false);
-                        
-                    keyInfo = Console.ReadKey();
+                    PrintNotes(date, false);
+
+                    keyInfo = Console.ReadKey(true);
                     keyPressed = keyInfo.Key;
                     if (keyPressed == ConsoleKey.Enter)
                     {
@@ -131,39 +150,57 @@ namespace CoolConsoleApp2
                 }
                 else
                     Console.WriteLine("На это число нет заметок.");
+
+                keyInfo = Console.ReadKey(true);
+                keyPressed = keyInfo.Key;
+
+                if (keyPressed == ConsoleKey.RightArrow)
+                {
+                    date = date.AddDays(1);
+                }
+                else if (keyPressed == ConsoleKey.LeftArrow)
+                {
+                    date = date.AddDays(-1);
+                }
+                Console.Clear();
             } while (keyPressed != ConsoleKey.Escape);
 
             Console.ResetColor();
             Console.Clear();
-
-            noteMenu.Menu();
+            Menu();
         }
-
-
 
         private int SelectedIndex;
         private string Label = "МЕНЮ ЗАМЕТОК \n";
         private string Label2 = "Выберите действие:\n";
-        private string[] Options = { "Создать заметку", "Поиск заметок", "Вернуться в главное меню." };
+        private string[] Options = { "Создать заметку", "Список заметок", "Удалить заметку", "Вернуться в главное меню." };
 
         public void Menu()
         {
             Console.Clear();
             Console.ResetColor();
-            NoteMenu noteMenu = new NoteMenu();
-            int selectedIndex = noteMenu.Run();
+            int selectedIndex = Run();
 
-            Notepad notepad = new Notepad();
 
             switch (selectedIndex)
             {
                 case 0:
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Создание заметок.\n");
+                    Console.ResetColor();
                     AddNote();
                     break;
                 case 1:
                     PrintNotesList();
                     break;
                 case 2:
+                    Console.ResetColor();
+                    Console.Clear();
+                    DeleteNotes();
+                    break;
+                case 3:
                     KeyboardMenu mainMenu = new KeyboardMenu();
                     Graphic _Graphic = new Graphic();
                     Console.ResetColor();
@@ -176,7 +213,6 @@ namespace CoolConsoleApp2
 
         public void DisplayOptions()
         {
-
             Console.SetCursorPosition(0, 0);
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(Label);
@@ -244,4 +280,4 @@ namespace CoolConsoleApp2
         }
     }
 }
-}
+

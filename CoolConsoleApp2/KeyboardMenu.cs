@@ -11,10 +11,10 @@ namespace CoolConsoleApp2
 
         public void MainMenu()
         {
-
-
             KeyboardMenu mainMenu = new KeyboardMenu();
             int selectedIndex = mainMenu.Run();
+
+            Notepad notepad = new Notepad();
 
             Graphic _Graphic = new Graphic();
             Piano piano = new Piano();
@@ -38,7 +38,7 @@ namespace CoolConsoleApp2
                     piano.Run();
                     break;
                 case 5:
-
+                    notepad.Menu();
                     break;
                 case 6:
                     Environment.Exit(0);
