@@ -77,7 +77,6 @@
     <Compile Include="Graphic.cs" />
     <Compile Include="KeyboardMenu.cs" />
     <Compile Include="Note.cs" />
-    <Compile Include="NoteMenu.cs" />
     <Compile Include="Notepad.cs" />
     <Compile Include="Piano.cs" />
     <Compile Include="Program.cs" />
