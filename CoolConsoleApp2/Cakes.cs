@@ -300,7 +300,7 @@ namespace CoolConsoleApp2
         private void AddOrderToBook()
         {
             string order = $"{DateTime.Now}   Цена заказа: {price}. Заказ: {Cake}\n";
-            string path = @"C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\Order\Orders.txt";
+            string path = @"Orders.txt";
             File.AppendAllText(path, order);
         }
 
