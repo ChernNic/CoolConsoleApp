@@ -113,5 +113,78 @@ namespace CoolConsoleApp2
             lobsterMusic.PlaySync();
             Environment.Exit(0);
         }
+
+        public void WiseTree()
+        {
+            Console.Clear();
+            Thread.Sleep(400);
+
+            Console.SetWindowSize(130, 63);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(@"kddxOOdxXKxONWNXNNKkkK0Okkxdoccclldkkod0K0K0OOk00xxKX0O0Ok00OxdkO000Odllll:;,..;ccc:cl:;;,'...        .......''.;okko:,.
+X0OddkxOKxlxOKNNNXXkx0KK0kodxddxddxdllodxOO0K0000OOO000KOOK0doxOkkkdlcccll:,'.';c:;;;:;,.........           .;od0NNNXKkl
+WWXkkKK0OxkOdkNWWWNOd0NNKxccoxdoxOkxdoc:cdxxkOkxO00OKX0KXKXKOkxkkOOoclolccc,..,,,'........'''''..            .c0XXXXXXXX
+NWNXNWWNXXK00OO00Okdd0NWOlc:cdkxccc:oo:;,;::coddxkkO0K0KX0OOkxkKX0dcldoc;;,'..,...... ..',',,;'.    ..   ... ,ONNK000KKK
+0KXNNWWWWWNKkdolcccoxKNNd;::;lxd;....,,'.''.',:;;:ldk0XX0xO00kxOOkl:cl:,,'.'.........  .....''.. .....   ... ,ONNK0KKKKK
+doxxdOKXNWWXOo:,:cccxXNKd;;;;:;'.... ........'''''',cxKKkxO0kxdddolcccc::'....           ......  ..''...   ...;ONXXXXXOx
+Ko:;;cooxkdo:,:lclooONXKx;',,,..........     ....'...:ldOO00Okxxkdlc:;,,'..               ..  .....''...   .....lkkdk0l'
+Oo::lollc:;;cldxdxxkKNX0d;......cl;,,.....       .....,lkkxddxdxOxl:;..           ...         .. ..'....     .'.,;'.''..
+xc::,;,',c:''cl:cOXNWNKko;....;::'..'.. .:c,.      ....ckOdlodxxdl;,..       ..  .'..           .......   .  .,'....',;;
+d:::'...';,',::,lOXNNK0kl.....'...,ddc'..l0O;....     .,ododxxxdl;..      ..:l:..:kd;..           .......''..........';;
+:coc..........;xKKXNNKx:'.....;c:',oOOxoloxoc;. .     .;lodxkxddl,.       .,lxdlldOxc'.      ..  ...''',,,',,'....'.'..'
+,:oc'..'',;'..:kXNKKKd;'',,'..',,,,;;clc;,,'...  ......:odkkkkOkl,.       ...';::c:,.....   ......',,,',,',::,...'..',,'
+:,cdc...'.','',lKXOxo;',;;,,::'..';;'.......... ......'ldkOOO00Od,.   .   ................ ...'..;c:;;,,;,,;c:;,',,.,,'.
+0O0XX0xl,....',dXNOo:;;:c:;:cl:;'..,,'................;dkk0KKK00x;...  ............  .......',;,';:::::,,,,,;;;;,'...'..
+KNWNNWWN0l'..';kNKOdl:::c:;::cllc;;;,..,,...........':dxx0XKKKXKd,......  ..  .............',,;;::,;,,,..',,'','......''
+xxddxOKNWNx'.;dKX0kkdcloc;llllooc:,','',,',,',;,,;,;loO0O0KKXK00x:'',,.........''.'''.......',::;,'..''..............,;,
+koclc:co0NXx;,xXK0kxoloxdlolc;;;:l:,coc:;:olclllollood00000KX0kOkc..,;'........',,',;,;;'...',,,.............. .....,;,'
+ddooxxxodO0KOlxKXKkollclc;,';:ccod:;oxc;cooodxdoooddookK00KXX0kxxl..','......',;:c:;;;;:;,...''....'...  .... .....';;..
+dlcok0KX0xoodx0000kol:,,;:;:dddocc::ll:cddokOkxolccclldxk00OkOOdoc'.'........';:coc::;,;::,..',,'..''...  ....'.....;;,,
+o:;okxdxkOOxokXK0xolc;coxkddkxdolooldolx0xdOkdxo,..,;;cokOdxxxxdoc,''........',;:lc::ccc::;,..''''......  ....'.......'.
+l:ckkllloxkxx0NNKdcododxkOO0Odllcllllodkkdodoc:;'...,;:lkOxxkxdool;''...........,;;;::clc:;,......  .   .  ..''..'......
+xodkxdolcxK00KXKkocloldk0KK00dllol:oxddocc:,''.....,;;:okxdxkxl;;;,'.'............;;',;::;,'....''.....,'......'........
+dldxl:cloxkxx0KOxolllldxxO0Okoooclc:c:;,''..  .,:;;;::cddokOkocc:;,'.,'......... .';,',;,.......,;''..';,'''.......  ...
+;;colcoodxdclOKOxdolloolcooodllocc:,'..'.    'ckkoc:cccdk00kdc;col;'.''....'..''.  .,,,'.'...'..,,...';,................
+;;;;:cccoooolkX0kdooldxlcolloc:cc:'..       ,lokko:cccd0KXOl;,'cxdc,..''..''..,;.   .....'. .,,'................ .......
+:::;,:ccllcccdKKxldxddkxodxolc;,,...     ...:dodl;cold0XXX0oc::ldolc,',,''''',,'.     ..................',...''.. ......
+cc;;c::;;;:lox0OolkOkkkxoodc;;,,'.    ...'..':col::odxKK0000Oxodxdol;',,,;,,''.        ............. ....... ....   ....
+;,,;:;,'';cclkKOloO0Okdoc:;,,'....  ....','....,:;.':ldxkO00Oxlodl;,,..'''..            ...',,'.... ..'..'..............
+::c:;;,,,;c::kKxldkOkdllc;,,'..   .''..';,...      ..'',:cccc:;:c;'.'.....               ...,,,,.....''.......  ......':
+:odc:ccll:,.;kOolxOkdoc;;;'..   ...,,'',:;....       ......'''...'.....           .....  ....;;............ ..      ....
+clok0Okdc;,;dOooxkOxolc;,,'...  ..,:;;,';;'......        .....  .....          .  .....   ...............            .. 
+;cldxdkOkxddxolxOOOxcc:,'....  ..';::;;:oo;'.......                  ..        .. .................''....    ...        
+llxkdoxkxololcoOKKOdcc;...... ...,;;c:cldx:;;'''''......                      ............................  ....     .  
+Ok0OxxOK0OxdlldkOOOd::;...    ..',;::coddoclc;;,'',,'''.....        .         ......... ....   ......'..... .           
+dooOXklloxxlcdOkxxxdl:,'..    .''':c:cxxolccloc;;c:;;;'.'''''....'........  ............  ...   ..............          
+lldOKOl;;cl:,lkkkdlclc,.....  .',,;:;:lcccccclc;:olcdo;:lc:cl:..,;,..''''. ............... ..      .......'xK0dll:,'....
+lcxkolc,;lolcoxxxl,;lc;...''....''..'.',;;:ccddccxdlolldoldo:;'':oc,..,,...........                .......cXWWWWWNNNK0OO
+xc:c;;:;;ldoolccc'.cdl:;;;;;,''........','';;cddookdoxk0kdOkllolldl;''''',,'....                    ....  :KWNWWNNWWWNNN
+dc'..'cddoc::;;:c';xoclccl,.........   ...........,,;llllcodol::cl:,.''.....                        ......'d00OkOO0XNNNN
+,;'',;clooc:,,,'..:o;,;clo;';,::'.........                 . .  ..                                 ........:ddodxookKXXX
+:llc:;;;;:;:cdl;,,cc;::;::;,,;c:;,...'''';;...'......     ..                  .....                ........,::c:looxOOXX
+,,;:;',,,,';cl:,';lo:';;:ll:;;;cc,.','',;:;'.,::::;;;,',;:c:;,',::;;;,''',,,'...  ....  .......     .......,o:.,'.',;:d0
+...,'.......''';cc;lxl'.,,cdl:;;:,':;'.';;'..,ccloocoollodollloloxoll:,;;,,,.....................    ...............''c0
+....... ...';c:::c;,cl:..';,,:c;',::'..';;'..,:ccloloddxkkdllodoooc:c,''''.........  ...............    .........'..';l0
+.....'..'..';c:,,;,'.',.':c;cl;'.,,.......''..,,',;;;,:lodl,';:;;,'''.........    ..  ..............  ............';ox00
+'....''','.';;'.;ll:,;:;;;;:;'...... ..................................... ...     ............   .....'.. .......',,:oo
+l'..........,'..,:c;',;;'........ .           . ..                          ..      .   ..      ..  ..........','.,,',;;
+.. .........''..',::;;;,...........                                                .    .   .            ..........',,,'
+........'..........,'.,,...........                                         .   ...        ..           .. ....'....'...
+..........'.......''''.......'.....                  .            .         .. ....     .. ..............  .......'',;cl
+.....'...''....',,,................   .             ...               .       .        .....     ....     .......,cooxkk
+..,,.....,,....,,;;'.. .. ........... ..          .......        ....  ........      ....        ..       .. ..'coxkOOO0
+..'..''..',,,;;;;::;,...............   ..      .......... ......,;,.''......''........              .        ..,ldkOOOOO
+.,,..'.....'...',,'',,..............   ..      ...,'...........',,...''..............               ..       ..,lxkOOkOO
+,;,.............',''................. ..       ...'..,,... ......;'...,,.'''........    ..                   ..,dOkkkkkk
+.......  ..,:;'..',;'......''''..........      .'''.....     ....'...''..'.........'......                  ....lOkkkkxk
+..'''.... ..,;,.. .....''''''''.........        .'.....    ................ .............                  .....;kOkkkkx
+'..,,'.....',,............'..'.........           .......................   ....   .......                  .....oOkxxxx
+...'.....................''...........   ..         .  ...'...................     ...   .....              .....'ldoodd
+............  .........',,,'''.........  ..              ....... ............   .....      ..                .....;doooo");
+            SoundPlayer lobsterMusic = new SoundPlayer("WiseMysticalTree.wav");
+            lobsterMusic.PlaySync();
+            Environment.Exit(0);
+        }
     }
 }

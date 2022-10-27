@@ -7,7 +7,7 @@ namespace CoolConsoleApp2
     {
         private int SelectedIndex;
         private string Label = "Выберите то, что хотите:";
-        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster", "Пианино" , "Заметки", "Exit" };
+        private string[] Options = { "Таблица умножения", "Игра Угадай число", "Делители числа", "lobster", "Пианино" , "Заметки", "Пироги", "Exit" };
 
         public void MainMenu()
         {
@@ -19,6 +19,7 @@ namespace CoolConsoleApp2
             Graphic _Graphic = new Graphic();
             Piano piano = new Piano();
             Games games = new Games();
+            Cakes cakes = new Cakes();
 
             switch (selectedIndex)
             {
@@ -41,6 +42,9 @@ namespace CoolConsoleApp2
                     notepad.Menu();
                     break;
                 case 6:
+                    cakes.Menu();
+                    break;
+                case 7:
                     Environment.Exit(0);
                     break;
                 default:
@@ -76,7 +80,6 @@ namespace CoolConsoleApp2
 
                 Console.SetCursorPosition(65 - Options[i].Length/2, 10 + i);
                 Console.WriteLine($"<< {currentOption} >>");
-
             }
             Console.ResetColor();
         }

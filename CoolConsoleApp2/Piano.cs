@@ -178,7 +178,6 @@ namespace CoolConsoleApp2
                 Console.Clear();
                 Console.WriteLine("Чтобы вернуться в главное меню нажмите ESC.\n");
                 Console.WriteLine($"Октавы: {Octave} и {Octave + 1}");
-                
             }
 
         }
