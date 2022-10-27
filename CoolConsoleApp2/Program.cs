@@ -4,15 +4,10 @@
     {
         static void Main(string[] args)
         {
-            //Graphic _Graphic = new Graphic();
-            //_Graphic.ProgramLogoStart();
-            //KeyboardMenu mainMenu = new KeyboardMenu();
-            //mainMenu.MainMenu();
-
-            Cakes cakes = new Cakes();
-
-            cakes.FirstMenu();
-
+            Graphic _Graphic = new Graphic();
+            _Graphic.ProgramLogoStart();
+            KeyboardMenu mainMenu = new KeyboardMenu();
+            mainMenu.MainMenu();
         }
     }
 }

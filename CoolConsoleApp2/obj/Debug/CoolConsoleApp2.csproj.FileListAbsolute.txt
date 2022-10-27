@@ -82,3 +82,4 @@ C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolCons
 C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.AccessControl.xml
 C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Николай\OneDrive\Рабочий стол\CoolConsoleApp\CoolConsoleApp2\obj\Debug\CoolConsoleApp2.csproj.CopyComplete
+C:\Users\chern\Desktop\C# projects\CoolConsoleApp2\bin\Debug\WiseMysticalTree.wav
